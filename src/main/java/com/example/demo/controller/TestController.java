@@ -12,9 +12,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 	
 	@GetMapping("/getTest")
-	public String getSaluto(@RequestParam Integer numero) {
+	public String getSaluto(@RequestParam Integer token) {
 		
-		return "ciao " + numero;
+		String result ="TOKEN: ";
+		
+		return result + token;
 	}
 
 }
