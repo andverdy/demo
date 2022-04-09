@@ -13,9 +13,7 @@ public class TestController {
 	
 	@GetMapping("/getTest")
 	public String getSaluto(@RequestParam Integer token) {
-		
 		String result ="TOKEN: ";
-		
 		return result + token;
 	}
 
