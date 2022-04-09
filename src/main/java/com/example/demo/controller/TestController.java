@@ -11,10 +11,12 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 public class TestController {
 	
+	private final String TOKEN = "TOKEN";
+	
 	@GetMapping("/getTest")
 	public String getSaluto(@RequestParam Integer token) {
-		String result ="TOKEN: ";
-		return result + token;
+		
+		return this.TOKEN + token;
 	}
 
 }
