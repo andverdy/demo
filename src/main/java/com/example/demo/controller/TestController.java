@@ -15,8 +15,8 @@ public class TestController {
 	
 	@GetMapping("/getTest")
 	public String getSaluto(@RequestParam Integer token) {
-		String testString = ""test;
-		return this.TOKEN + token + " " + testString;
+		String testString = "test";
+		return this.TOKEN + testString;
 	}
 
 }
